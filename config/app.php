@@ -52,7 +52,7 @@ return [
     |
     */
 
-    'url' => env('APP_URL', 'http://localhost'),
+    'url' => env('APP_URL', 'https://amibakeshop-29b184a12536.herokuapp.com/'),
 
     'asset_url' => env('ASSET_URL', null),
 
