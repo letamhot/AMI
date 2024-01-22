@@ -61,7 +61,8 @@ class ProducerController extends Controller
     {
         $data = $request->except('image');
         if($request->hasFile('image')){
-            $data['image'] = $this->fileService->uploadFile($request->file('image'), "imageProducer/");
+            // $data['image'] = $this->fileService->uploadFile($request->file('image'), "imageProducer/");
+            $data['image'] = base64_encode(file_get_contents($request->file('image')->getRealPath()));
 
         }
         $producer = $this->producerService->create($data);
@@ -106,8 +107,11 @@ class ProducerController extends Controller
         $producer = Producer::find($id);
         $data = $request->except('image');
         if($request->hasFile('image')){
-            $data['image'] = $this->fileService->uploadFile($request->file('image'), "imageProducer/");
-            $this->fileService->deleteFile($producer->image);
+            // $data['image'] = $this->fileService->uploadFile($request->file('image'), "imageProducer/");
+
+            // $this->fileService->deleteFile($producer->image);
+            $data['image'] = base64_encode(file_get_contents($request->file('image')->getRealPath()));
+
         }
         $producer = $this->producerService->update($data, $producer);
         // dd($producer);

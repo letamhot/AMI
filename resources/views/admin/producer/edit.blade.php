@@ -77,7 +77,7 @@
                                 <label>Ảnh đại diện nhà phân phối</label><i class="fas fa-star" style=" width: 10%;
                                 font-size:8px;color: red"></i>
                                 <input type="file" class="form-control input-sm" name="image" id="image" onchange="readURL(event)">
-                               <img id="image_post" src="{{ $producer->image ? asset(Storage::url($producer->image)):''}}" alt="{{$producer->name}}" width="80px" height="80px" />
+                               <img id="image_post" src="data:image;base64,{{ $producer->image }}" alt="{{$producer->name}}" width="80px" height="80px" />
                         
                             </div>
                             <button type="submit" class="btn btn-primary">Sửa</button>
