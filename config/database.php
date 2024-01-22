@@ -66,7 +66,7 @@ return [
         'pgsql' => [
             'driver' => 'pgsql',
             'url' => env('DATABASE_URL'),
-            'host' => env('DB_HOST', 'https://amibakeshop-29b184a12536.herokuapp.com/'),
+            'host' => env('DB_HOST'),
             'port' => env('DB_PORT', '5432'),
             'database' => env('DB_DATABASE', 'amibakeshop'),
             'username' => env('DB_USERNAME', 'root'),
