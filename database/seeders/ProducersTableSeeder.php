@@ -35,14 +35,14 @@ class ProducersTableSeeder extends Seeder
             1 => 
             array (
                 'id' => 2,
-                'name' => 'Bandai',
-                'slug' => 'bandai1619361157',
-                'address' => 'Thừa Thiên Huế',
-                'phone' => '0985757941',
-                'taxCode' => 1331213123121,
-                'image' => 'imageProducer/bandai_1619361157.png',
+                'name' => 'AMIBAKESHOP',
+                'slug' => 'amibakeshop1705648670',
+                'address' => 'Đối diện nhà Văn Hoá xóm 2, thôn Văn La, xã Lương Ninh, huyện Quảng Ninh, tỉnh Quảng Bình',
+                'phone' => '0822175675',
+                'taxCode' => 123123111,
+                'image' => 'imageProducer/ami_1705648669.jpg',
                 'created_at' => '2021-04-25 14:32:37',
-                'updated_at' => '2021-04-25 14:32:37',
+                'updated_at' => '2024-01-19 07:17:50',
                 'deleted_at' => NULL,
             ),
             2 => 
@@ -55,8 +55,8 @@ class ProducersTableSeeder extends Seeder
                 'taxCode' => 2342343242343,
                 'image' => 'imageProducer/daban_1619361213.jpg',
                 'created_at' => '2021-04-25 14:33:33',
-                'updated_at' => '2021-04-25 14:33:33',
-                'deleted_at' => NULL,
+                'updated_at' => '2024-01-19 07:15:56',
+                'deleted_at' => '2024-01-19 07:15:56',
             ),
             3 => 
             array (
@@ -68,8 +68,8 @@ class ProducersTableSeeder extends Seeder
                 'taxCode' => 13144212232211,
                 'image' => 'imageProducer/super_nova_1619361261.jpg',
                 'created_at' => '2021-04-25 14:34:21',
-                'updated_at' => '2021-04-25 14:34:21',
-                'deleted_at' => NULL,
+                'updated_at' => '2024-01-19 07:15:52',
+                'deleted_at' => '2024-01-19 07:15:52',
             ),
         ));
         

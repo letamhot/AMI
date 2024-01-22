@@ -40,35 +40,20 @@ class ProductsTableSeeder extends Seeder
             1 => 
             array (
                 'id' => 2,
-                'name' => 'Bandai Mô Hình Gundam HG Moon HGUC UC',
-                'slug' => 'bandai-mo-hinh-gundam-hg-moon-hguc-uc1619539226',
-                'id_category' => 2,
+                'name' => 'Bánh bông lan trứng muối',
+                'slug' => 'banh-bong-lan-trung-muoi1705653620',
+                'id_category' => 3,
                 'id_producer' => 2,
-                'amount' => 21,
-                'image' => 'imageProduct/1231_1619536533.jpg',
-                'image1' => 'imageProduct/hguc_moon_gundam_03_1_1619536533.jpg',
-                'image2' => 'imageProduct/hguc_moon_gundam_pa_1619536533.jpg',
-                'price' => 6400000,
+                'amount' => 10,
+                'image' => 'imageProduct/bltm_1705649202.jpg',
+                'image1' => 'imageProduct/bltm8_1705649203.jpg',
+                'image2' => 'imageProduct/bltm7_1705649203.jpg',
+                'price' => 55000,
                 'new' => 1,
-                'description' => 'Tên Sản Phẩm : Bandai Mô Hình Gundam HG Moon 1/144 HGUC UC Đồ Chơi Lắp Ráp Anime Nhật
-
-Thương Hiệu : Bandai – Nhật Bản
-
-Phiên Bản : Hg 
-
-Tỷ Lệ : 1:144
-
-Độ Tuổi : >14
-
-Phân Loại Sp : Lắp Ráp
-
-Sản Phẩm Nhựa Cao Cấp Với Độ Sắc Nét Cao
-Sản Xuất Bởi Bandai Namco – Nhật Bản
-An Toàn Với Trẻ Em
-Phát Triển Trí Não Cho Trẻ Hiệu Quả Đi Đôi Với Niềm Vui Thích Bất Tận
-Rèn Luyện Tính Kiên Nhẫn Cho Người Chơi',
+                'description' => 'Bánh bông lan trứng muối
+Nguyên liệu: Bánh bông lan thơm ngon, trứng muối và sợi ruốc',
                 'created_at' => '2021-04-25 14:42:42',
-                'updated_at' => '2021-04-27 16:00:26',
+                'updated_at' => '2024-01-19 08:40:20',
                 'deleted_at' => NULL,
             ),
             2 => 
@@ -96,8 +81,8 @@ An Toàn Với Trẻ Em
 Phát Triển Trí Não Cho Trẻ Hiệu Quả Đi Đôi Với Niềm Vui Thích Bất Tận
 Rèn Luyện Tính Kiên Nhẫn Cho Người Chơi',
                 'created_at' => '2021-04-25 14:43:59',
-                'updated_at' => '2021-04-27 16:00:53',
-                'deleted_at' => NULL,
+                'updated_at' => '2024-01-19 07:32:43',
+                'deleted_at' => '2024-01-19 07:32:43',
             ),
             3 => 
             array (
@@ -124,8 +109,8 @@ An Toàn Với Trẻ Em
 Phát Triển Trí Não Cho Trẻ Hiệu Quả Đi Đôi Với Niềm Vui Thích Bất Tận
 Rèn Luyện Tính Kiên Nhẫn Cho Người Chơi',
                 'created_at' => '2021-04-25 14:45:18',
-                'updated_at' => '2021-04-27 16:01:04',
-                'deleted_at' => NULL,
+                'updated_at' => '2024-01-19 07:32:52',
+                'deleted_at' => '2024-01-19 07:32:52',
             ),
             4 => 
             array (
@@ -152,8 +137,8 @@ An Toàn Với Trẻ Em
 Phát Triển Trí Não Cho Trẻ Hiệu Quả Đi Đôi Với Niềm Vui Thích Bất Tận
 Rèn Luyện Tính Kiên Nhẫn Cho Người Chơi',
                 'created_at' => '2021-04-25 14:46:33',
-                'updated_at' => '2021-04-27 16:00:46',
-                'deleted_at' => NULL,
+                'updated_at' => '2024-01-19 07:32:39',
+                'deleted_at' => '2024-01-19 07:32:39',
             ),
             5 => 
             array (
@@ -178,63 +163,102 @@ Là mô hình có nhiều chi tiết open-hatch , gimmick nhất trong lịch s�
 Trang bị đèn LED có khả năng thay đổi màu, đèn led được thiết kế để vừa tăng độ thẩm mỹ nhưng vẫn đảm bảo biên độ cử động là tốt nhất.
 Kèm đèn LED trong Beam saber ( kiếm năng lượng )',
                 'created_at' => '2021-04-25 14:55:58',
-                'updated_at' => '2021-04-25 14:55:58',
-                'deleted_at' => NULL,
+                'updated_at' => '2024-01-19 07:32:47',
+                'deleted_at' => '2024-01-19 07:32:47',
             ),
             6 => 
             array (
                 'id' => 7,
-                'name' => 'Bandai Mô Hình Gundam RG Unicorn Perfectibility The Gundam Base Limited',
-                'slug' => 'bandai-mo-hinh-gundam-rg-unicorn-perfectibility-the-gundam-base-limited1619538688',
-                'id_category' => 5,
+                'name' => 'Trà sữa truyền thống',
+                'slug' => 'tra-sua-truyen-thong1705653118',
+                'id_category' => 2,
                 'id_producer' => 2,
-                'amount' => 21,
-                'image' => 'imageProduct/156_4029_s_n2bvwozdkh12k07orift4bt83yqz_1200x1200_1619362688.jpg',
-                'image1' => 'imageProduct/n2519706001001_004_1619362688.jpg',
-                'image2' => 'imageProduct/54ff9092f9618d00d858100a0907a199_1619362688.jpg',
-                'price' => 2300000,
+                'amount' => 100,
+                'image' => 'imageProduct/ts2_1705653118.jpg',
+                'image1' => 'imageProduct/ts2_1705653118.jpg',
+                'image2' => 'imageProduct/ts2_1705653118.jpg',
+                'price' => 20000,
                 'new' => 1,
-                'description' => 'Tên Sản Phẩm : Tên Sản Phẩm : Bandai Mô Hình Gundam RG Unicorn Perfectibility The Gundam Base Limited 1/144 Đồ Chơi Lắp Ráp Anime Nhật
-
-Thương Hiệu : Bandai – Nhật Bản
-
-Phiên Bản : Rg
-
-Tỷ Lệ : 1:144
-
-Độ Tuổi : >14
-
-Phân Loại Sp : Lắp Ráp
-
-Sản Phẩm Nhựa Cao Cấp Với Độ Sắc Nét Cao
-Sản Xuất Bởi Bandai Namco – Nhật Bản
-An Toàn Với Trẻ Em
-Phát Triển Trí Não Cho Trẻ Hiệu Quả Đi Đôi Với Niềm Vui Thích Bất Tận
-Rèn Luyện Tính Kiên Nhẫn Cho Người Chơi',
+                'description' => 'Trà sữa truyền thống
+Nguyên liệu: Trà xanh chắt lấy nước, sữa tươi, chân châu đen, đường đen',
                 'created_at' => '2021-04-25 14:58:08',
-                'updated_at' => '2021-04-27 15:51:28',
+                'updated_at' => '2024-01-19 08:31:58',
                 'deleted_at' => NULL,
             ),
             7 => 
             array (
                 'id' => 8,
-                'name' => 'Bandai Mô Hình Gundam SD Hello Kitty MS-06S Char’s Zaku Ⅱ SDCS Cross Silhouette',
-                'slug' => 'bandai-mo-hinh-gundam-sd-hello-kitty-ms-06s-chars-zaku-sdcs-cross-silhouette1619539236',
-                'id_category' => 6,
+                'name' => 'Trà sữa kem trứng',
+                'slug' => 'tra-sua-kem-trung1705653218',
+                'id_category' => 2,
                 'id_producer' => 2,
-                'amount' => 21,
-                'image' => 'imageProduct/10721927a4_1619362919.jpg',
-                'image1' => 'imageProduct/10721927a10_1619362919.jpg',
-                'image2' => 'imageProduct/10721927p_1619362919.jpg',
-                'price' => 5800000,
+                'amount' => 100,
+                'image' => 'imageProduct/ts1_1705653218.jpg',
+                'image1' => 'imageProduct/ts_1705649550.jpg',
+                'image2' => 'imageProduct/ts1_1705649550.jpg',
+                'price' => 25000,
                 'new' => 1,
-                'description' => 'Sản Phẩm Nhựa Cao Cấp Với Độ Sắc Nét Cao
-Sản Xuất Bởi Bandai Namco – Nhật Bản
-An Toàn Với Trẻ Em
-Phát Triển Trí Não Cho Trẻ Hiệu Quả Đi Đôi Với Niềm Vui Thích Bất Tận
-Rèn Luyện Tính Kiên Nhẫn Cho Người Chơi',
+                'description' => 'Trà sữa kem trứng
+Nguyên liệu: Nước trà xanh chắt lọc, kem trứng, sữa tươi, dừa nướng vụn',
                 'created_at' => '2021-04-25 15:01:59',
-                'updated_at' => '2021-04-27 16:00:36',
+                'updated_at' => '2024-01-19 08:33:38',
+                'deleted_at' => NULL,
+            ),
+            8 => 
+            array (
+                'id' => 9,
+                'name' => 'Su kem',
+                'slug' => 'su-kem1705653207',
+                'id_category' => 2,
+                'id_producer' => 2,
+                'amount' => 100,
+                'image' => 'imageProduct/sukem2_1705653207.jpg',
+                'image1' => 'imageProduct/sukem1_1705650578.jpg',
+                'image2' => 'imageProduct/sukem_1705650578.jpg',
+                'price' => 55000,
+                'new' => 1,
+                'description' => 'Bánh su kem
+Nguyên liệu: Bánh nướng, kem trứng',
+                'created_at' => '2024-01-19 07:49:38',
+                'updated_at' => '2024-01-19 08:33:27',
+                'deleted_at' => NULL,
+            ),
+            9 => 
+            array (
+                'id' => 10,
+                'name' => 'Bánh kem nhiều mẫu size vừa',
+                'slug' => 'banh-kem-nhieu-mau-size-vua1705653641',
+                'id_category' => 3,
+                'id_producer' => 2,
+                'amount' => 100,
+                'image' => 'imageProduct/bk1_1705653268.jpg',
+                'image1' => 'imageProduct/bk_1705650748.jpg',
+                'image2' => 'imageProduct/bk5_1705650748.jpg',
+                'price' => 200000,
+                'new' => 1,
+                'description' => 'Bánh kem nhiều mẫu đẹp, ngon chất lượng
+Nguyên liệu: Bánh nướng, kem phối nhiều màu không phụ gia, lớp siro nhiều vị, đồ trang trí',
+                'created_at' => '2024-01-19 07:52:28',
+                'updated_at' => '2024-01-19 08:40:41',
+                'deleted_at' => NULL,
+            ),
+            10 => 
+            array (
+                'id' => 11,
+                'name' => 'Bánh kem nhiều mẫu size lớn',
+                'slug' => 'banh-kem-nhieu-mau-size-lon1705650871',
+                'id_category' => 3,
+                'id_producer' => 2,
+                'amount' => 100,
+                'image' => 'imageProduct/bk6_1705650870.jpg',
+                'image1' => 'imageProduct/bk2_1705650870.jpg',
+                'image2' => 'imageProduct/bk7_1705650871.jpg',
+                'price' => 300000,
+                'new' => 1,
+                'description' => 'Bánh kem nhiều mẫu đẹp, ngon chất lượng 
+Nguyên liệu: Bánh nướng, kem phối nhiều màu không phụ gia, lớp siro nhiều vị, đồ trang trí',
+                'created_at' => '2024-01-19 07:54:31',
+                'updated_at' => '2024-01-19 07:54:31',
                 'deleted_at' => NULL,
             ),
         ));

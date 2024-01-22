@@ -22,23 +22,23 @@ class SlideImageTableSeeder extends Seeder
             0 => 
             array (
                 'id' => 2,
-                'image' => 'slides/logo_1619362984.png',
+                'image' => 'slides/slide_1705650436.jpg',
                 'created_at' => '2021-04-25 15:03:04',
-                'updated_at' => '2021-04-25 15:03:04',
+                'updated_at' => '2024-01-19 07:47:16',
             ),
             1 => 
             array (
                 'id' => 5,
-                'image' => 'slides/10645848a_1619363078.jpg',
+                'image' => 'slides/bk10_1705650451.jpg',
                 'created_at' => '2021-04-25 15:04:38',
-                'updated_at' => '2021-04-25 15:04:38',
+                'updated_at' => '2024-01-19 07:47:31',
             ),
             2 => 
             array (
                 'id' => 6,
-                'image' => 'slides/o1cn01e2zbvx1tjnaibm3wz_104862361_1619363171.jpg',
+                'image' => 'slides/bk9_1705650466.jpg',
                 'created_at' => '2021-04-25 15:06:11',
-                'updated_at' => '2021-04-25 15:06:11',
+                'updated_at' => '2024-01-19 07:47:46',
             ),
         ));
         
