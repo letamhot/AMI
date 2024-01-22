@@ -6,7 +6,7 @@
     <td>{{$value->address}}</td>
     <td>{{$value->phone}}</td>
     <td>{{$value->taxCode}}</td>
-    <td><img src="{{$value->image? data:image;base64,{{ $value->image }}:""}}" alt="{{$value->name}}" width="80px" height="80px"></td>
+    <td><img src="data:image;base64,{{$value->image}}" alt="{{$value->name}}" width="80px" height="80px"></td>
     <td>
         <a href="{{ route('admin.producer.restore', $value->id) }}"
         class="btn btn-warning btn-sm" type="submit"

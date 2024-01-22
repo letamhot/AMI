@@ -160,7 +160,7 @@
                 <img id="zoom" src="{{Auth::user()->avatar}}" alt="No Image" srcset=""
                     style=" border-radius: 50%; height:2.5rem; width:2.5rem;">
                 @else
-                <img id="zoom" src="data:image;base64,{{(Auth::user()->avatar))}}" alt="No Image" srcset=""
+                <img id="zoom" src="data:image;base64,{{Auth::user()->avatar}}" alt="No Image" srcset=""
                     style=" border-radius: 50%; height:2.5rem; width:2.5rem;">
                 @endif
 
