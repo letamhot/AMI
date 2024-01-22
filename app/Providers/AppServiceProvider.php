@@ -1,11 +1,26 @@
 <?php
 
-namespace App\Providers;
+namespace AppProviders;
 
-use Illuminate\Support\ServiceProvider;
+use IlluminateSupportServiceProvider;
+use IlluminateSupportFacadesSchema;
+use IlluminateContractsRoutingUrlGenerator;
 
 class AppServiceProvider extends ServiceProvider
 {
+    /**
+     * Bootstrap any application services.
+     *
+     * @return void
+     */
+    public function boot(UrlGenerator $url)
+    {
+        Schema::defaultStringLength(191);
+        if(env('REDIRECT_HTTPS')) {
+            $url->formatScheme('https');
+        }
+    }
+
     /**
      * Register any application services.
      *
@@ -13,16 +28,8 @@ class AppServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        //
-    }
-
-    /**
-     * Bootstrap any application services.
-     *
-     * @return void
-     */
-    public function boot()
-    {
-        //
+        if(env('REDIRECT_HTTPS')) {
+            $this->app['request']->server->set('HTTPS', true);
+        }
     }
 }
