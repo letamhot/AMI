@@ -76,11 +76,11 @@ class ProductController extends Controller
         }
         if($request->hasFile('image1')){
             // $data['image1'] = $this->fileService->uploadFile($request->file('image1'), "imageProduct/");
-            $data['image1'] = base64_encode(file_get_contents($request->file('image')->getRealPath()));
+            $data['image1'] = base64_encode(file_get_contents($request->file('image1')->getRealPath()));
 
         }
         if($request->hasFile('image2')){
-            $data['image2'] = base64_encode(file_get_contents($request->file('image')->getRealPath()));
+            $data['image2'] = base64_encode(file_get_contents($request->file('image2')->getRealPath()));
 
             // $data['image2'] = $this->fileService->uploadFile($request->file('image2'), "imageProduct/");
 
@@ -159,11 +159,11 @@ class ProductController extends Controller
         }
         if($request->hasFile('image1')){
             // $data['image1'] = $this->fileService->uploadFile($request->file('image1'), "imageProduct/");
-            $data['image1'] = base64_encode(file_get_contents($request->file('image')->getRealPath()));
+            $data['image1'] = base64_encode(file_get_contents($request->file('image1')->getRealPath()));
 
         }
         if($request->hasFile('image2')){
-            $data['image2'] = base64_encode(file_get_contents($request->file('image')->getRealPath()));
+            $data['image2'] = base64_encode(file_get_contents($request->file('image2')->getRealPath()));
 
             // $data['image2'] = $this->fileService->uploadFile($request->file('image2'), "imageProduct/");
 
