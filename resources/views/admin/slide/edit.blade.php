@@ -22,7 +22,7 @@
             <div class="form-group{{$errors->has('image')?' has-error':''}}">
                 <strong>Ảnh:</strong>
                 <input type="file" class="form-control" name="image" id="image" onchange="uploadFile(event)">
-                <img id="image_post" src="{{asset(Storage::url($slide->image))}}" alt="" width="80px" height="80px" />
+                <img id="image_post" src="data:image;base64,{{ $slide->image }}" alt="" width="80px" height="80px" />
                 <span class="text-danger">{{$errors->first('image')}}</span>
             </div>
         </div>

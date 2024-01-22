@@ -70,15 +70,19 @@ class ProductController extends Controller
     {
         $data= $request->except('image', 'image1', 'image2');
         if($request->hasFile('image')){
-            $data['image'] = $this->fileService->uploadFile($request->file('image'), "imageProduct/");
+            // $data['image'] = $this->fileService->uploadFile($request->file('image'), "imageProduct/");
+            $data['image'] = base64_encode(file_get_contents($request->file('image')->getRealPath()));
 
         }
         if($request->hasFile('image1')){
-            $data['image1'] = $this->fileService->uploadFile($request->file('image1'), "imageProduct/");
+            // $data['image1'] = $this->fileService->uploadFile($request->file('image1'), "imageProduct/");
+            $data['image1'] = base64_encode(file_get_contents($request->file('image')->getRealPath()));
 
         }
         if($request->hasFile('image2')){
-            $data['image2'] = $this->fileService->uploadFile($request->file('image2'), "imageProduct/");
+            $data['image2'] = base64_encode(file_get_contents($request->file('image')->getRealPath()));
+
+            // $data['image2'] = $this->fileService->uploadFile($request->file('image2'), "imageProduct/");
 
         }
         $data['id_category'] = $request['category'];
@@ -130,22 +134,38 @@ class ProductController extends Controller
     {
         $product = Product::find($id);
         $data= $request->except(['image', 'image1', 'image2']);
-        if($request->hasFile('image')){
-            $data['image'] = $this->fileService->uploadFile($request->file('image'), "imageProduct/");
-            $this->fileService->deleteFile($product->image);
+        // if($request->hasFile('image')){
+        //     $data['image'] = $this->fileService->uploadFile($request->file('image'), "imageProduct/");
+        //     $this->fileService->deleteFile($product->image);
 
+
+        // }
+        // if($request->hasFile('image1')){
+        //     $data['image1'] = $this->fileService->uploadFile($request->file('image1'), "imageProduct/");
+        //     $this->fileService->deleteFile($product->image1);
+
+
+        // }
+        // if($request->hasFile('image2')){
+        //     $data['image2'] = $this->fileService->uploadFile($request->file('image2'), "imageProduct/");
+        //     $this->fileService->deleteFile($product->image2);
+
+
+        // }
+        if($request->hasFile('image')){
+            // $data['image'] = $this->fileService->uploadFile($request->file('image'), "imageProduct/");
+            $data['image'] = base64_encode(file_get_contents($request->file('image')->getRealPath()));
 
         }
         if($request->hasFile('image1')){
-            $data['image1'] = $this->fileService->uploadFile($request->file('image1'), "imageProduct/");
-            $this->fileService->deleteFile($product->image1);
-
+            // $data['image1'] = $this->fileService->uploadFile($request->file('image1'), "imageProduct/");
+            $data['image1'] = base64_encode(file_get_contents($request->file('image')->getRealPath()));
 
         }
         if($request->hasFile('image2')){
-            $data['image2'] = $this->fileService->uploadFile($request->file('image2'), "imageProduct/");
-            $this->fileService->deleteFile($product->image2);
+            $data['image2'] = base64_encode(file_get_contents($request->file('image')->getRealPath()));
 
+            // $data['image2'] = $this->fileService->uploadFile($request->file('image2'), "imageProduct/");
 
         }
         $data['id_category'] = $request['category'];

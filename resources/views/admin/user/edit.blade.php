@@ -125,7 +125,7 @@
 
                                 <label>Ảnh đại diện</label>
                                 <input type="file" class="form-control input-sm" name="avatar" id="avatar" onchange="readURL(event)">
-                               <img id="image_post" src="{{ $user->avatar ? asset(Storage::url($user->avatar)):'http://tabern.vietprojectgroup.com/images/user.png' }}" alt="{{$user->name}}" width="80px" height="80px" />
+                               <img id="image_post" src=" data:image;base64,{{$user->avatar}}" alt="{{$user->name}}" width="80px" height="80px" />
 
                             </div>
 

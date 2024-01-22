@@ -19,7 +19,7 @@
     <div class="col-xs-12 col-sm-12 col-md-12">
         <div class="form-group">
             <strong>Ảnh: </strong>
-            <img src="{{asset(Storage::url( $slide->image)) }}" width="60px" height="60px">
+            <img src="data:image;base64,{{( $slide->image)) }}" width="60px" height="60px">
         </div>
     </div>
 </div>

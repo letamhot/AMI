@@ -29,7 +29,7 @@
     @if(!empty($value->provider_id))
     <td><img src="{{ asset($value->avatar)  }}" alt="{{ $value->name }}" width="80px" height="80px" /></td>
     @else
-    <td><img src="{{asset(Storage::url($value->avatar))}}" alt="{{ $value->name }}" width="80px" height="80px" /></td>
+    <td><img src="data:image;base64,{{($value->avatar))}}" alt="{{ $value->name }}" width="80px" height="80px" /></td>
     @endif
         
     <td><a href="{{ route('admin.user.edit', $value->id) }}"

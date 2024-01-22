@@ -96,21 +96,21 @@
 
                                 <label>Ảnh sản phẩm 1</label>
                                 <input type="file" class="form-control input-sm" name="image" id="image" onchange="readURL(event)">
-                                <img id="image_post" src="{{asset(Storage::url($product->image))}}" alt="" width="80px" height="80px" />
+                                <img id="image_post" src="data:image;base64,{{($product->image))}}" alt="" width="80px" height="80px" />
 
                             </div>
                             <div class="form-group @error('image1') has-error has-feedback @enderror">
 
                                 <label>Ảnh sản phẩm 2</label>
                                 <input type="file" class="form-control input-sm" name="image1" id="image1" onchange="readURL1(event)">
-                                <img id="image_post1" src="{{asset(Storage::url($product->image1))}}" alt="" width="80px" height="80px" />
+                                <img id="image_post1" src="data:image;base64,{{($product->image1))}}" alt="" width="80px" height="80px" />
 
                             </div>
                             <div class="form-group @error('image2') has-error has-feedback @enderror">
 
                                 <label>Ảnh sản phẩm 3</label>
                                 <input type="file" class="form-control input-sm" name="image2" id="image2" onchange="readURL2(event)">
-                                <img id="image_post2" src="{{asset(Storage::url($product->image2))}}" alt="" width="80px" height="80px" />
+                                <img id="image_post2" src="data:image;base64,{{($product->image2))}}" alt="" width="80px" height="80px" />
 
                             </div>
                             <div class="form-group @error('price') has-error has-feedback @enderror">

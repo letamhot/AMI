@@ -67,9 +67,9 @@
                                 <div class="productinfo text-center">
                                     <a href="{{ route('productdetail', $product->id) }}">
                                     @if($product->sum('amount') > 0)
-                                        <img src="{{asset(Storage::url($product->image))  }}" alt="" height="180px" /></a>
+                                        <img src="data:image;base64,{{($product->image))  }}" alt="" height="180px" /></a>
                                     @else
-                                    <img src="{{asset(Storage::url($product->image))  }}" alt="" height="180px"
+                                    <img src="data:image;base64,{{($product->image))  }}" alt="" height="180px"
                                         style="-webkit-filter: blur(2px);" /></a>
                                     @endif
 

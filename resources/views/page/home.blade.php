@@ -32,7 +32,8 @@
                             </div>
                             <div class="col-sm-6">
                                 @if(!empty($slides->image))
-                                <img src="{{asset(Storage::url($slides->image))}}" style="margin-left: 100px;"
+                                
+                                <img src="data:image;base64,{{$slides->image}}" style="margin-left: 100px;"
                                     width="400px" height="400px" class="girl img-responsive" alt="" />
                                 @endif
                             </div>
@@ -46,7 +47,7 @@
                                 <button type="button" class="btn btn-default get">Vào ngay</button>
                             </div>
                             <div class="col-sm-6">
-                                <img src="{{asset(Storage::url($slide->image))}}" style="margin-left: 100px;"
+                                <img src="data:image;base64,{{$slide->image}}" style="margin-left: 100px;"
                                     width="400px" height="400px" class="girl img-responsive" alt="" />
                                 {{-- <img src="images/home/pricing.png" class="pricing" alt="" /> --}}
                             </div>
@@ -125,9 +126,9 @@
                                 <div class="productinfo text-center">
                                     <a href="{{ route('productdetail', $product->id) }}">
                                         @if($product->amount > 0)
-                                        <img src="{{asset(Storage::url($product->image )) }}" alt="" height="180px" /></a>
+                                        <img src="data:image;base64,{{$product->image}}" alt="" height="180px" /></a>
                                     @else
-                                    <img src="{{asset(Storage::url($product->image )) }}" alt="" height="180px"
+                                    <img src="data:image;base64,{{$product->image}}" alt="" height="180px"
                                         style="-webkit-filter: blur(2px);" /></a>
                                     @endif
 
@@ -173,9 +174,9 @@
                           <div class="product-thumnail">
                             <a href="{{ route('productdetail', $product->id) }}">
                                 @if($product->sum('amount') > 0)
-                                <img src="{{asset(Storage::url($product->image )) }}" alt="" style="width:153px; height:180px"  /></a>
+                                <img src="data:image;base64,{{$product->image}}" alt="" style="width:153px; height:180px"  /></a>
                             @else
-                            <img src="{{asset(Storage::url($product->image )) }}" alt=""
+                            <img src="data:image;base64,{{$product->image}}" alt=""
                                 style="-webkit-filter: blur(2px);width:153px; height:180px" /></a>
                             @endif
                              <div class="group-flash">

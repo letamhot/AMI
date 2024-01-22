@@ -13,10 +13,10 @@
                             <div class="productinfo text-center">
                                 <a href="{{ route('productdetail', $product->id) }}">
                                     @if($product->sum('amount') > 0)
-                                    <img src="{{asset(Storage::url($product->image )) }}" alt=""
+                                    <img src="data:image;base64,{{$product->image}}" alt=""
                                         height="180px" /></a>
                                 @else
-                                <img src="{{asset(Storage::url($product->image )) }}" alt=""
+                                <img src="data:image;base64,{{$product->image}}" alt=""
                                     height="180px" style="-webkit-filter: blur(2px);" /></a>
                                 @endif
 
@@ -58,7 +58,7 @@
                     <div class="product-image-wrapper">
                         <div class="single-products">
                             <div class="productinfo text-center">
-                                <img src="{{asset(Storage::url($item->image )) }}"
+                                <img src="data:image;base64,{{($item->image )) }}"
                                     alt="{{ $item->name }}" height="180px"/>
                                 <h2>{{ number_format($item->price) }} VND</h2>
                                 <a href="{{ route('productdetail', $product->id) }}" class=" btn

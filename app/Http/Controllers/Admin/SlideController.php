@@ -46,7 +46,9 @@ class SlideController extends Controller
     {
         $slide = new Slide();
         if($request->hasFile('image')){
-            $slide->image = $this->fileService->uploadFile($request->file('image'), "slides/");
+            // $slide->image = $this->fileService->uploadFile($request->file('image'), "slides/");
+            $slide->image = base64_encode(file_get_contents($request->file('image')->getRealPath()));
+
 
         }
     // dd($slide);
@@ -89,7 +91,9 @@ class SlideController extends Controller
     {
         $slide = Slide::findOrfail($id);
         if($request->hasFile('image')){
-            $slide->image = $this->fileService->uploadFile($request->file('image'), "slides/");
+            // $slide->image = $this->fileService->uploadFile($request->file('image'), "slides/");
+            $slide->image = base64_encode(file_get_contents($request->file('image')->getRealPath()));
+
         }
         $slide->save();
         return redirect()->route('admin.slide.index')->with('success', 'slide Updated successfully');

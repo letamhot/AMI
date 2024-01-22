@@ -38,7 +38,7 @@
                         @foreach($slide as $value)
 
                         <tr>
-                            <td><img src="{{asset(Storage::url( $value->image)) }}" width="100px" height="60px"></td>
+                            <td><img src="data:image;base64,{{( $value->image)) }}" width="100px" height="60px"></td>
                             <td>
                                 <a href="{{ route('admin.slide.show', $value->id) }}" class="btn btn-primary"><i class="fa fa-eye" title="Xem"></i></a>
                                 <a href="{{ route('admin.slide.edit', $value->id) }}" class="btn btn-warning btn-sm" type="submit"><i class="fa fa-edit" title="Sửa"></i></a>

@@ -36,7 +36,7 @@
                             <td class="id">{{ $i+1 }}</td>
                             <td class="cart_image">
                                 <a href="{{ route('productdetail', $item->id) }}"><img
-                                        src="{{asset(Storage::url($item->options->img))  }}" alt="{{ $item->name }}"
+                                        src="data:image;base64,{{($item->options->img))  }}" alt="{{ $item->name }}"
                                         width="100px"></a>
                             </td>
                             <td class="cart_product">

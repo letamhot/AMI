@@ -8,9 +8,9 @@
     <td>{{$value->category['name']}}</td>
     <td>{{$value->producer['name']}}</td>
     <td>{{$value->amount}}</td>
-    <td><img src="{{ asset(Storage::url($value->image)) }}" alt="{{ $value->name }}" width="80px" height="80px" /></td>
-    <td><img src="{{ asset(Storage::url($value->image1)) }}" alt="{{ $value->name }}" width="80px" height="80px" /></td>
-    <td><img src="{{ asset(Storage::url($value->image2)) }}" alt="{{ $value->name }}" width="80px" height="80px" /></td>
+    <td><img src="data:image;base64,{{ $value->image }}" alt="{{ $value->name }}" width="80px" height="80px" /></td>
+    <td><img src="data:image;base64,{{ $value->image1 }}" alt="{{ $value->name }}" width="80px" height="80px" /></td>
+    <td><img src="data:image;base64,{{ $value->image2 }}" alt="{{ $value->name }}" width="80px" height="80px" /></td>
     <td>{{(number_format($value->price,0,".",","))}}</td>
     @if($value->new ==1)
     <td><label class="badge bg-green" style="color:green" for="">New</label></td>

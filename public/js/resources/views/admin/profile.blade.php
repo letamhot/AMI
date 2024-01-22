@@ -42,7 +42,7 @@
                         <img id="zoom" src="{{ (Auth::user()->avatar) }}" alt="{{Auth::user()->name}}" srcset="" width="150"
                             style=" border: 1px solid #d9d9d9;" class="img-thumbnail">
                         @else
-                        <img id="zoom" src="{{asset(Storage::url(Auth::user()->avatar))}}" alt="{{Auth::user()->name}}" srcset="" width="150"
+                        <img id="zoom" src="data:image;base64,{{(Auth::user()->avatar))}}" alt="{{Auth::user()->name}}" srcset="" width="150"
                             style=" border: 1px solid #d9d9d9;" class="img-thumbnail">
                         @endif
                         <table>

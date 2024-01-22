@@ -60,7 +60,9 @@ class UserController extends Controller
     {
         $data = $request->except('avatar');
         if($request->hasFile('avatar')){
-            $data['avatar'] = $this->fileService->uploadFile($request->file('avatar'), "imageUser/");
+            $data['avatar'] = base64_encode(file_get_contents($request->file('avatar')->getRealPath()));
+
+            // $data['avatar'] = $this->fileService->uploadFile($request->file('avatar'), "imageUser/");
 
         }
         $user = $this->userService->createUser($data);
@@ -104,7 +106,9 @@ class UserController extends Controller
     {
         $data = $request->except('avatar');
         if($request->hasFile('avatar')){
-            $data['avatar'] = $this->fileService->uploadFile($request->file('avatar'), "imageUser/");
+            // $data['avatar'] = $this->fileService->uploadFile($request->file('avatar'), "imageUser/");
+            $data['avatar'] = base64_encode(file_get_contents($request->file('avatar')->getRealPath()));
+
             $this->fileService->deleteFile($user->avatar);
         }
         $user = $this->userService->updateUser($data, $user);
