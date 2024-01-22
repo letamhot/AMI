@@ -207,9 +207,9 @@
                                             <a href="{{ route('productdetail', $product->id) }}">
                                                 @if($product->sum('amount') > 0)
 
-                                                <img src="data:image;base64,{{$id_product->image}}" alt="" /></a>
+                                                <img src="data:image;base64,{{$product->image}}" alt="" /></a>
                                             @else
-                                            <img src="data:image;base64,{{$id_product->image}}" alt=""
+                                            <img src="data:image;base64,{{$product->image}}" alt=""
                                                 style="-webkit-filter: blur(2px);" /></a>
                                             @endif
                                             @if($product->sum('amount') > 0)
