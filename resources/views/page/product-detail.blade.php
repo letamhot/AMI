@@ -91,7 +91,7 @@
                     <!--product-details-->
                     <div class="col-sm-5">
                         <div class="view-product">
-                            <img src="data:image;base64,{{( $id_product->image )) }}" alt="" />
+                            <img src="data:image;base64,{{$id_product->image}}" alt="" />
                             <h3>Sản phẩm</h3>
                         </div>
                         <div id="similar-product" class="carousel slide" data-ride="carousel">
@@ -99,19 +99,19 @@
                             <!-- Wrapper for slides -->
                               <div class="carousel-inner">
                                   <div class="item active">
-                                    <a href=""><img src="data:image;base64,{{( $id_product->image )) }}" alt="" width="85px" height="85px"></a>
-                                    <a href=""><img src="data:image;base64,{{( $id_product->image1 )) }}" alt="" width="85px" height="85px"></a>
-                                    <a href=""><img src="data:image;base64,{{( $id_product->image2 )) }}" alt="" width="85px" height="85px"></a>
+                                    <a href=""><img src="data:image;base64,{{$id_product->image}}" alt="" width="85px" height="85px"></a>
+                                    <a href=""><img src="data:image;base64,{{$id_product->image1}}" alt="" width="85px" height="85px"></a>
+                                    <a href=""><img src="data:image;base64,{{$id_product->image2}}" alt="" width="85px" height="85px"></a>
                                   </div>
                                   <div class="item ">
-                                    <a href=""><img src="data:image;base64,{{( $id_product->image )) }}" alt="" width="85px" height="85px"></a>
-                                    <a href=""><img src="data:image;base64,{{( $id_product->image1 )) }}" alt="" width="85px" height="85px"></a>
-                                    <a href=""><img src="data:image;base64,{{( $id_product->image2 )) }}" alt="" width="85px" height="85px"></a>
+                                    <a href=""><img src="data:image;base64,{{$id_product->image}}" alt="" width="85px" height="85px"></a>
+                                    <a href=""><img src="data:image;base64,{{$id_product->image1}}" alt="" width="85px" height="85px"></a>
+                                    <a href=""><img src="data:image;base64,{{$id_product->image2}}" alt="" width="85px" height="85px"></a>
                                   </div>
                                   <div class="item ">
-                                    <a href=""><img src="data:image;base64,{{( $id_product->image )) }}" alt="" width="85px" height="85px"></a>
-                                    <a href=""><img src="data:image;base64,{{( $id_product->image1 )) }}" alt="" width="85px" height="85px"></a>
-                                    <a href=""><img src="data:image;base64,{{( $id_product->image2 )) }}" alt="" width="85px" height="85px"></a>
+                                    <a href=""><img src="data:image;base64,{{$id_product->image}}" alt="" width="85px" height="85px"></a>
+                                    <a href=""><img src="data:image;base64,{{$id_product->image1}}" alt="" width="85px" height="85px"></a>
+                                    <a href=""><img src="data:image;base64,{{$id_product->image2}}" alt="" width="85px" height="85px"></a>
                                   </div>
                                   
                               </div>
@@ -207,9 +207,9 @@
                                             <a href="{{ route('productdetail', $product->id) }}">
                                                 @if($product->sum('amount') > 0)
 
-                                                <img src="data:image;base64,{{( $id_product->image )) }}" alt="" /></a>
+                                                <img src="data:image;base64,{{$id_product->image}}" alt="" /></a>
                                             @else
-                                            <img src="data:image;base64,{{( $id_product->image )) }}" alt=""
+                                            <img src="data:image;base64,{{$id_product->image}}" alt=""
                                                 style="-webkit-filter: blur(2px);" /></a>
                                             @endif
                                             @if($product->sum('amount') > 0)
@@ -268,7 +268,7 @@
                                     <li><a href=""><i class="fa fa-clock-o"></i>12:41 PM</a></li>
                                     <li><a href=""><i class="fa fa-calendar-o"></i>31 DEC 2014</a></li>
                                 </ul>
-                                <img src="data:image;base64,{{( $id_product->image )) }}" style=" aligh:center;width: 60rem;
+                                <img src="data:image;base64,{{$id_product->image}}" style=" aligh:center;width: 60rem;
                                     height: 40rem;" alt="" />
                                 <br>
                                 <p aligh:"center"><b>Giới thiệu sản phẩm: </b> {!! $id_product->description !!}</p>

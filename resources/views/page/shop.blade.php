@@ -98,7 +98,7 @@
                                                     href="{{ route('productdetail', $product->id) }}">{{ $product->name }}</a>
                                             </h4>
                                             <a href="{{ route('productdetail', $product->id) }}">
-                                                <img src="{{ asset(Storage::url($product->image)) }}" alt="">
+                                                <img src="data:image;base64,{{$product->image}}" alt="">
                                             </a>
                                             <p>{{ $product->description }}</p>
                                         </div>
