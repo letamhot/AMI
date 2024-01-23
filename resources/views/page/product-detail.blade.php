@@ -162,7 +162,7 @@
                                 @endif
                                 </div>
                                 <span class="btn btn-primary proceed-btn" style="width: 40%">
-                                    <i class="fa fa-phone" aria-hidden="true"></i>Liên hệ: 0822175675
+                                    <a href="0822175675"><i class="fa fa-phone" aria-hidden="true"></i>Liên hệ: 0822175675</a>
                                 </span>
                                 <input type="hidden" id="check_stock" name="check_stock"
                                     value="{{ $id_product->amount }}" style="display: flex">
