@@ -148,7 +148,7 @@
                                 <h2>{{ $id_product->name }}</h2>
                                 <p><b>Loại sản phẩm: </b> {{ $id_product->category['name'] }}</p>
 
-                                    <span><b>Giá sản phẩm: </b>{{ number_format($id_product->price) }}
+                                    <span style="margin-top:0px !important"><b>Giá sản phẩm: </b>{{ number_format($id_product->price) }}
                                         VND</span>
                                 {{-- <div style="margin-top: 10px;">
                                 @if(Auth::user())
@@ -163,7 +163,7 @@
                                 </div> --}}
                                 <input type="hidden" id="check_stock" name="check_stock"
                                     value="{{ $id_product->amount }}" style="display: flex">
-                                <p style="padding-top: 20px;" id="quantity" name="qty"><b>Số lượng:</b>
+                                <p style="padding-top:0px !important;" id="quantity" name="qty"><b>Số lượng:</b>
                                     {{ $id_product->amount }} sản phẩm</p>
                                 <p><b>Status:
                                         @if( $id_product->new == 1)
