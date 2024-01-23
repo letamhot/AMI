@@ -146,9 +146,9 @@
                                 </span>
                                 @else
                                 <h2>{{ $id_product->name }}</h2>
-                                <p><b>Loại sản phẩm:</b> {{ $id_product->category['name'] }}</p>
+                                <p><b>Loại sản phẩm: </b> {{ $id_product->category['name'] }}</p>
 
-                                    <span><b>Giá sản phẩm:</b>{{ number_format($id_product->price) }}
+                                    <span><b>Giá sản phẩm: </b>{{ number_format($id_product->price) }}
                                         VND</span>
                                 <div style="margin-top: 10px;">
                                 @if(Auth::user())
@@ -168,13 +168,13 @@
                                     <div class="modal-dialog" role="document">
                                       <div class="modal-content">
                                         <div class="modal-header">
-                                          <h5 class="modal-title" id="exampleModalLabel">Gọi điện thoại</h5>
-                                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                          <h5 class="modal-title" id="exampleModalLabel">Gọi AMIBAKESHOP</h5>
+                                          {{-- <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                             <span aria-hidden="true">&times;</span>
-                                          </button>
+                                          </button> --}}
                                         </div>
                                         <div class="modal-body">
-                                          <p>Liên hệ: 0822175675</p>
+                                          <p><i class="fa fa-phone" aria-hidden="true"></i> Liên hệ: 0822175675</p>
                                         </div>
                                         <div class="modal-footer">
                                           <button type="button" class="btn btn-secondary" data-dismiss="modal">Đóng</button>
