@@ -150,7 +150,7 @@
 
                                     <span><b>Giá sản phẩm:</b>{{ number_format($id_product->price) }}
                                         VND</span>
-                                <div style="margin-top: 20px;">
+                                <div style="margin-top: 10px;">
                                 @if(Auth::user())
                                     @if($id_product->amount > 0)
                                     <a href="{{ route('productdetail', $id_product->id) }}" class="btn btn-default add-to-cart"
@@ -161,6 +161,9 @@
                                     @endif
                                 @endif
                                 </div>
+                                <span class="btn btn-primary proceed-btn" style="width: 100%">
+                                    <i class="fa fa-phone" aria-hidden="true"></i>Liên hệ: 0822175675
+                                </span>
                                 <input type="hidden" id="check_stock" name="check_stock"
                                     value="{{ $id_product->amount }}" style="display: flex">
                                 <p style="padding-top: 20px;" id="quantity" name="qty"><b>Số lượng:</b>
@@ -225,6 +228,7 @@
                                                     VND</span></h2>
 
                                             @endif
+                                            
                                         </div>
                                     </div>
                                 </div>
