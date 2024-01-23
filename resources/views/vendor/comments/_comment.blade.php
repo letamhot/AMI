@@ -6,7 +6,7 @@
 
 <div id="comment-{{ $comment->getKey() }}" class="media">
     @if($comment->commenter->provider_id == null )
-        <img class="mr-3" src="data:image;base64,{{($comment->commenter->avatar))}}" alt="{{ $comment->commenter->name ?? $comment->guest_name }} Avatar" style="border-radius:50%; width:60px; height:60px">
+        <img class="mr-3" src="data:image;base64,{{$comment->commenter->avatar}}" alt="{{ $comment->commenter->name ?? $comment->guest_name }} Avatar" style="border-radius:50%; width:60px; height:60px">
     @else
         <img class="mr-3" src="{{$comment->commenter->avatar}}" alt="{{ $comment->commenter->name ?? $comment->guest_name }} Avatar" style="border-radius:50%; width:60px; height:60px">
     @endif
