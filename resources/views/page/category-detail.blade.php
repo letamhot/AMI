@@ -61,10 +61,7 @@
                                 <div class="productinfo text-center">
                                     <a href="{{ route('productdetail', $product->id) }}">
                                         @if($product->sum('amount') > 0)
-                                        <a href="{{ route('productdetail', $product->id) }}">
-                                            <span class="pull-right">{{ $product->name }}
-                                            </span>
-                                        </a>
+                                        <h4>{{ $product->name }}</h4>
                                         <img src="data:image;base64,{{$product->image}}" alt="" height="180px" />
                                     </a>
                                     @else
