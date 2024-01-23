@@ -151,7 +151,7 @@
                                     <span><b>Giá sản phẩm: </b>{{ number_format($id_product->price) }}
                                         VND</span>
                                 <div style="margin-top: 10px;">
-                                @if(Auth::user())
+                                {{-- @if(Auth::user())
                                     @if($id_product->amount > 0)
                                     <a href="{{ route('productdetail', $id_product->id) }}" class="btn btn-default add-to-cart"
                                         style="border: none" href="javascript:"><i class="fa fa-shopping-cart"></i>Chi tiết</a>
@@ -159,8 +159,23 @@
                                     <a href="javascript:window.location.href=window.location.href"
                                         class="btn primary-btn pd-cart disabled" aria-disabled="true">Chi tiết</a>
                                     @endif
-                                @endif
+                                @endif --}}
                                 </div>
+                                <input type="hidden" id="check_stock" name="check_stock"
+                                    value="{{ $id_product->amount }}" style="display: flex">
+                                <p style="padding-top: 20px;" id="quantity" name="qty"><b>Số lượng:</b>
+                                    {{ $id_product->amount }} sản phẩm</p>
+                                <p><b>Status:
+                                        @if( $id_product->new == 1)
+                                    </b> Mới</p>
+                                @else
+                                </b> Cũ</p>
+                                @endif
+                                <p><b>Nhà phân phối:</b> {{ $id_product->producer->name }}</p>
+                                {{-- <a href=""><img src="images/product-details/share.png" class="share img-responsive"
+                                alt="" /></a> --}}
+
+                                @endif
                                 <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#exampleModal">
                                     <i class="fa fa-phone" aria-hidden="true"></i> Gọi ngay
                                   </button>
@@ -183,21 +198,7 @@
                                       </div>
                                     </div>
                                   </div>
-                                <input type="hidden" id="check_stock" name="check_stock"
-                                    value="{{ $id_product->amount }}" style="display: flex">
-                                <p style="padding-top: 20px;" id="quantity" name="qty"><b>Số lượng:</b>
-                                    {{ $id_product->amount }} sản phẩm</p>
-                                <p><b>Status:
-                                        @if( $id_product->new == 1)
-                                    </b> Mới</p>
-                                @else
-                                </b> Cũ</p>
-                                @endif
-                                <p><b>Nhà phân phối:</b> {{ $id_product->producer->name }}</p>
-                                {{-- <a href=""><img src="images/product-details/share.png" class="share img-responsive"
-                                alt="" /></a> --}}
-
-                                @endif
+                                
                         </div>
                         {{--  </form>  --}}
 
