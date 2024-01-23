@@ -79,7 +79,7 @@
         <div class="container">
             <div class="row">
                 
-                <div class="col-sm-2">
+                <div class="col-sm-3">
                     <div class="single-widget">
                         <h2>Về chúng tôi</h2>
                         <ul class="nav nav-pills nav-stacked">
@@ -90,7 +90,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-sm-2">
+                <div class="col-sm-3">
                     <div class="single-widget">
                         <h2>Chính sách</h2>
                         <ul class="nav nav-pills nav-stacked">
@@ -102,7 +102,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-sm-2">
+                <div class="col-sm-3">
                     <div class="single-widget">
                         <h2>Liên Hệ</h2>
                         <ul class="nav nav-pills nav-stacked">
