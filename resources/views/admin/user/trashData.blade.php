@@ -29,7 +29,7 @@ $current = $user->currentPage() * $user->perPage() - $user->perPage();
     @if(!empty($value->provider_id))
     <td><img src="{{ $value->avatar  }}" alt="{{ $value->name }}" width="80px" height="80px" /></td>
     @else
-    <td><img src="data:image;base64,{{($value->avatar))}}" alt="{{ $value->name }}" width="80px" height="80px" /></td>
+    <td><img src="data:image;base64,{{$value->avatar}}" alt="{{ $value->name }}" width="80px" height="80px" /></td>
     @endif
     <td >
         <a class="btn btn-success" href="{{route('admin.user.restore', $value)}}"  onclick="return confirm('Do you want restore user-{{ $value->name }}?')">
