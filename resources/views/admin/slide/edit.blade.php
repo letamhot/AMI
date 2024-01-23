@@ -43,7 +43,7 @@
         }
     }
     $("#image").change(function() {
-        readURL(this);
+        uploadFile(this);
     });
 </script>
 @endpush
