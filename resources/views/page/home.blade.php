@@ -139,8 +139,8 @@
                                     <input type="hidden" value="{{ $product->amount }}"
                                         name="check_stock">
 
-                                    <a onclick="AddCartPost({{ $product->id }})"
-                                        class=" btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Thêm vào giỏ</a>
+                                    <a href="{{ route('productdetail', $product->id) }}"
+                                        class=" btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Chi tiết sản phẩm</a>
 
                                     @else
 

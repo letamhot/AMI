@@ -186,11 +186,11 @@
                                 <div style="margin-top: 20px;">
                                 @if(Auth::user())
                                     @if($id_product->amount > 0)
-                                    <a onclick="AddCartPost({{ $id_product->id }})" class="btn btn-default add-to-cart"
-                                        style="border: none" href="javascript:"><i class="fa fa-shopping-cart"></i>Thêm vào giỏ</a>
+                                    <a onclick="{{ route('productdetail', $id_product->id) }}" class="btn btn-default add-to-cart"
+                                        style="border: none" href="javascript:"><i class="fa fa-shopping-cart"></i>Chi tiết</a>
                                     @else
                                     <a href="javascript:window.location.href=window.location.href"
-                                        class="btn primary-btn pd-cart disabled" aria-disabled="true">Thêm vào giỏ</a>
+                                        class="btn primary-btn pd-cart disabled" aria-disabled="true">Chi tiết</a>
                                     @endif
                                 @endif
                                 </div>
@@ -249,7 +249,7 @@
                                             <h2>{{ $product->price }}</h2>
                                             <a href="{{ route('productdetail', $product->id) }}"
                                                 class="btn btn-default add-to-cart"><i
-                                                    class="fa fa-shopping-cart"></i>Thêm vào giỏ</a>
+                                                    class="fa fa-shopping-cart"></i>Chi tiết</a>
                                             @else
 
                                             <h2><span style="color:red">Hết hàng</span> <br>

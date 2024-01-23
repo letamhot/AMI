@@ -82,7 +82,7 @@
                                         name="check_stock">
 
                                     <a href="{{ route('productdetail', $product->id) }}"
-                                        class=" btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Thêm vào giỏ</a>
+                                        class=" btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Chi tiết</a>
 
                                     @else
 

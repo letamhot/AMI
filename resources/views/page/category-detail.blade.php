@@ -75,8 +75,8 @@
                                     <input type="hidden" value="{{ $product->sum('amount') }}"
                                         name="check_stock">
 
-                                    <a onclick="AddCartPost({{ $product->id }})"
-                                        class=" btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Thêm vào giỏ</a>
+                                    <a onclick="{{ route('productdetail', $product->id) }}"
+                                        class=" btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Chi tiết</a>
 
                                     @else
 

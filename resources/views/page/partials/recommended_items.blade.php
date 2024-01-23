@@ -30,7 +30,7 @@
 
                                 <a href="{{ route('productdetail', $product->id) }}"
                                     class=" btn btn-default add-to-cart"><i
-                                        class="fa fa-shopping-cart"></i>Thêm vào giỏ</a>
+                                        class="fa fa-shopping-cart"></i>Chi tiết</a>
 
                                 @else
 
@@ -62,7 +62,7 @@
                                     alt="{{ $item->name }}" height="180px"/>
                                 <h2>{{ number_format($item->price) }} VND</h2>
                                 <a href="{{ route('productdetail', $product->id) }}" class=" btn
-                                    btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Thêm vào giỏ</a>
+                                    btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Chi tiết</a>
                             </div>
 
                         </div>
