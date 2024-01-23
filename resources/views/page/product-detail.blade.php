@@ -178,7 +178,7 @@
                                         </div>
                                         <div class="modal-footer">
                                           <button type="button" class="btn btn-secondary" data-dismiss="modal">Đóng</button>
-                                          <button type="button" class="btn btn-primary">Gọi</button>
+                                          <button type="button" class="btn btn-primary" style="margin-top:0px !important">Gọi</button>
                                         </div>
                                       </div>
                                     </div>
