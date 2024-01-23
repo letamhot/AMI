@@ -161,7 +161,7 @@
                                     @endif
                                 @endif
                                 </div>
-                                <span class="btn btn-primary proceed-btn" style="width: 100%">
+                                <span class="btn btn-primary proceed-btn" style="width: 40%">
                                     <i class="fa fa-phone" aria-hidden="true"></i>Liên hệ: 0822175675
                                 </span>
                                 <input type="hidden" id="check_stock" name="check_stock"
