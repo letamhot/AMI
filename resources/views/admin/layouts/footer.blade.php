@@ -84,10 +84,6 @@
 @stack('js_editProducer')
 @stack('slides')
 @stack('edit_slides')
-
-
-
-
 </body>
 
 </html>

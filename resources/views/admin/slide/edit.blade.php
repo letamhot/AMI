@@ -19,11 +19,10 @@
     @method('PUT')
     <div class="row">
         <div class="col-xs-12 col-sm-12 col-md-12">
-            <div class="form-group{{$errors->has('image')?' has-error':''}}">
+            <div class="form-group">
                 <strong>Ảnh:</strong>
                 <input type="file" class="form-control" name="image" id="image" onchange="uploadFile(event)">
                 <img id="image_post" src="data:image;base64,{{ $slide->image }}" alt="" width="80px" height="80px" />
-                <span class="text-danger">{{$errors->first('image')}}</span>
             </div>
         </div>
         <div class="col-xs-12 col-sm-12 col-md-12">
