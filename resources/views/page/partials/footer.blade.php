@@ -113,7 +113,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-sm-3 col-sm-offset-1">
+                <div class="col-sm-3">
                     <div class="single-widget">
                         <h2>AMIBAKESHOP</h2>
                         <form action="#" class="searchform">
