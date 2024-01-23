@@ -150,8 +150,8 @@
 
                                     <span><b>Giá sản phẩm: </b>{{ number_format($id_product->price) }}
                                         VND</span>
-                                <div style="margin-top: 10px;">
-                                {{-- @if(Auth::user())
+                                {{-- <div style="margin-top: 10px;">
+                                @if(Auth::user())
                                     @if($id_product->amount > 0)
                                     <a href="{{ route('productdetail', $id_product->id) }}" class="btn btn-default add-to-cart"
                                         style="border: none" href="javascript:"><i class="fa fa-shopping-cart"></i>Chi tiết</a>
@@ -159,8 +159,8 @@
                                     <a href="javascript:window.location.href=window.location.href"
                                         class="btn primary-btn pd-cart disabled" aria-disabled="true">Chi tiết</a>
                                     @endif
-                                @endif --}}
-                                </div>
+                                @endif
+                                </div> --}}
                                 <input type="hidden" id="check_stock" name="check_stock"
                                     value="{{ $id_product->amount }}" style="display: flex">
                                 <p style="padding-top: 20px;" id="quantity" name="qty"><b>Số lượng:</b>
