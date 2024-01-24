@@ -59,7 +59,7 @@
                                                 <span id="categoryName_icon"></span>
                                             </th>
                                             <th> 
-                                                <a type="button" class="sorting" data-sorting_type="asc" data-column_name="producerName" style="cursor: pointer"> Producer</a>
+                                                <a type="button" class="sorting" data-sorting_type="asc" data-column_name="producerName" style="cursor: pointer"> Tên nhà phân phối</a>
                                                 <span id="producerName_icon"></span>
                                             </th>
                                             <th>Số lượng</th>
