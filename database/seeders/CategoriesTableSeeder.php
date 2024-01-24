@@ -37,6 +37,15 @@ class CategoriesTableSeeder extends Seeder
                 'updated_at' => '2024-01-22 01:27:22',
                 'deleted_at' => NULL,
             ),
+            2 => 
+            array (
+                'id' => 7,
+                'name' => 'Bánh ăn vặt',
+                'slug' => 'banh-an-vat',
+                'created_at' => '2024-01-24 01:50:02',
+                'updated_at' => '2024-01-24 01:50:02',
+                'deleted_at' => NULL,
+            ),
         ));
         
         
