@@ -117,9 +117,9 @@
                     <div class="single-widget">
                         <h2>AMIBAKESHOP</h2>
                         <form action="#" class="searchform">
-                            <input type="text" placeholder="Your email address" />
+                            {{-- <input type="text" placeholder="Your email address" />
                             <button type="submit" class="btn btn-default"><i
-                                    class="fa fa-arrow-circle-o-right"></i></button>
+                                    class="fa fa-arrow-circle-o-right"></i></button> --}}
                             <p>Chất lượng mang đến thương hiệu <br /> Đánh thức vị giác</p>
                         </form>
                     </div>
@@ -132,9 +132,9 @@
     <div class="footer-bottom">
         <div class="container">
             <div class="row">
-                <p class="pull-left">Copyright © 2021 AMIBAKESHOP Inc. All rights reserved.</p>
+                <p class="pull-left">Copyright © 2024 AMIBAKESHOP Inc. All rights reserved.</p>
                 <p class="pull-right">Designed by <span><a target="_blank"
-                            href="http://www.themeum.com">Themeum</a></span></p>
+                            href="#">LÊ VĂN TÁM</a></span></p>
             </div>
         </div>
     </div>
